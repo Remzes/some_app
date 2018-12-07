@@ -5,7 +5,7 @@ const SignupStrategy = new LocalStrategy({
   usernameField: "username",
   passwordField: "password",
   passReqToCallback: true,
-  session: true
+  session: false
 }, (req, username, password, done) => {
   const { body } = req;
   const user = {

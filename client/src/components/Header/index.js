@@ -32,6 +32,16 @@ class Header extends React.Component {
           <Link to="/profile">Profile</Link>
         </MenuItem>
         }
+        {isAuthenticated &&
+        <MenuItem>
+            <Link to="/createSurvey">Create Survey</Link>
+        </MenuItem>
+        }
+        {isAuthenticated &&
+        <MenuItem>
+            <Link to="/surveys">Survey List</Link>
+        </MenuItem>
+        }
       </Menu>
     )
   }

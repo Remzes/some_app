@@ -1,0 +1,40 @@
+version: "3"
+services:
+  web_client:
+    image: web_client
+    build: ./client
+    command: npm start
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./client:/client
+      - /client/node_modules
+    links:
+      - web_server
+    depends_on:
+      - "web_server"
+    networks:
+      - webapp
+  web_server:
+    image: web_server
+    build: ./server
+    command: npm start
+    ports:
+      - "3010:3010"
+    volumes:
+      - ./server:/server
+      - /server/node_modules
+    depends_on:
+      - "mongo"
+    networks:
+      - webapp
+  mongo:
+    image: "mongo"
+    command: mongod --noauth --smallfiles
+    ports:
+      - "27017:27017"
+    networks:
+      - webapp
+networks:
+  webapp:
+    driver: bridge

@@ -26,17 +26,7 @@ const UserSchema = new Schema({
   },
 }, {versionKey: false});
 
-const User = module.exports = mongoose.model('User', UserSchema);
-
-passport.serializeUser((user, done) => {
-  done(null, user.id);
-});
-
-passport.deserializeUser((id, done) => {
-  User.getUserById(id, (err, user) => {
-    done(err, user);
-  })
-});
+module.exports = mongoose.model('User', UserSchema);
 
 module.exports.createUser = (newUser, callback) => {
   bcrypt.genSalt(10, (err, salt) => {

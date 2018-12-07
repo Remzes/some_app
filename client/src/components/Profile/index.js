@@ -1,10 +1,14 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { getSurveys } from "../../action";
 
 class Profile extends React.Component {
+  componentDidMount() {
+    this.props.getSurveys()
+  }
+
   render() {
     const { currentUser } = this.props
-    console.log(currentUser)
     return (
       <div className="profile">
         { <h2>Welcome back, {currentUser.user.username}</h2> }
@@ -13,4 +17,4 @@ class Profile extends React.Component {
   }
 }
 
-export default connect(state => ({ currentUser: state.currentUser }))(Profile)
+export default connect(state => ({ currentUser: state.currentUser }), { getSurveys })(Profile)

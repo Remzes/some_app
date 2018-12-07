@@ -1,12 +1,24 @@
 const User = require('../../models/User');
+const passport = require('passport')
 const LocalStrategy = require('passport-local').Strategy;
 const jwt = require('jsonwebtoken');
 
+passport.serializeUser((user, done) => {
+    done(null, user._id);
+});
+
+//Usage - from session
+passport.deserializeUser((id, done) => {
+    User.findById(id)
+        .then(user => {
+            done(null, user)
+        });
+});
 
 const SigninStrategy = new LocalStrategy({
   usernameField: "username",
   passwordField: "password",
-  session: true,
+  session: false,
   passReqToCallback: true
 }, (req, username, password, done) => {
   const userData = {username: username.trim(), password: password.trim()}

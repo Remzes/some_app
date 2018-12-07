@@ -1,0 +1,33 @@
+.Survey-questions {
+    list-style-type: none;
+}
+
+.Survey-question {
+    list-style-type: none;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.Survey-question-title {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.Survey-answer-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.Survey-answer-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Survey-answer-field .input-row {
+    flex-basis: 70%;
+    margin-bottom: 10px;
+}

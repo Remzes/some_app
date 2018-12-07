@@ -1,12 +1,14 @@
 import axios from 'axios'
 import jwt_decode from 'jwt-decode';
+import { message } from 'antd'
 import { setTokenToLocalStorage, deleteTokenFromLocalStorage, getTokenFromLocalStorage } from '../helpers/auth'
 
 import {
   USER_REGISTER_FETCHING, USER_REGISTER_ERROR, USER_REGISTER_FETCHED,
   USER_LOGIN_FETCHING, USER_LOGIN_ERROR, USER_LOGIN_FETCHED,
   SET_CURRENT_USER_FETCHING, SET_CURRENT_USER_FETCHED,
-  SET_CURRENT_USER_NOTAUTH
+  SET_CURRENT_USER_NOTAUTH,
+  SURVEYS_ERROR, SURVEYS_FETCHED, SURVEYS_FETCHING
 } from '../constants/types'
 import setAuthToken from '../helpers/setAuthToken'
 
@@ -62,6 +64,26 @@ export const getMe = () => dispatch => {
       window.location.href = '/login'
     }
   }
+}
+
+export const getSurveys = () => async dispatch => {
+  dispatch({ type: SURVEYS_FETCHING })
+  const res = await axios.get('/api/surveys/list')
+  res.data.success
+    ? dispatch({ type: SURVEYS_FETCHED, payload: { message: res.data.message, surveys: res.data.surveys } })
+    : dispatch({ type: SURVEYS_ERROR, payload: { message: res.data.message } })
+}
+
+export const submitSurvey = values => async dispatch => {
+  console.log(values)
+  const res = await axios.post('/api/surveys/newSurvey', {
+    title: values.surveyTitle,
+    questions: values.questions,
+    numberOfQuestions: values.surveyQuestionsNumber
+  })
+  res.data.success
+    ? message.success(res.data.message)
+    : message.error(res.data.error)
 }
 
 export const logoutUser = history => dispatch => {

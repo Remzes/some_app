@@ -7,12 +7,11 @@ import {
   Link,
   Redirect,
   withRouter,
+  Switch
 } from 'react-router-dom'
 import { connect } from 'react-redux'
-import { Spin } from 'antd'
+import { Spin, Row, Col } from 'antd'
 import { logoutUser, getMe } from './action'
-import setAuthToken from './helpers/setAuthToken'
-import jwt_decode from 'jwt-decode'
 import 'antd/dist/antd.css';
 
 import Login from './components/Login'
@@ -20,6 +19,9 @@ import Register from './components/Register'
 import Home from './components/Home'
 import Header from './components/Header'
 import Profile from './components/Profile'
+import CreateSurvey from './components/Surveys/CreateSurvey'
+import Surveys from './components/Surveys/Surveys'
+import SurveyPreview from './components/Surveys/SurveyPreview'
 
 const LoggedInRoute = ({ component: Component, isAuth: isAuth, ...rest }) => {
   return <Route {...rest} render={props => (
@@ -50,10 +52,19 @@ class App extends Component {
       <Router>
         <Spin spinning={fetching}>
           <Header />
-          <Route exact path="/" component={Home} />
-          <LoggedOutRoute path="/login" component={Login} isAuth={isAuthenticated} />
-          <LoggedOutRoute path="/register" component={Register} isAuth={isAuthenticated} />
-          <LoggedInRoute path="/profile" component={Profile} isAuth={isAuthenticated} />
+          <Row>
+            <Col span={12} offset={6}>
+              <Route exact path="/" component={Home} />
+              <LoggedOutRoute path="/login" component={Login} isAuth={isAuthenticated} />
+              <LoggedOutRoute path="/register" component={Register} isAuth={isAuthenticated} />
+              <LoggedInRoute path="/profile" component={Profile} isAuth={isAuthenticated} />
+              <Switch>
+                <LoggedInRoute exact path="/surveys" component={Surveys} isAuth={isAuthenticated}/>
+                <LoggedInRoute path="/surveys/:surveyId" component={SurveyPreview} isAuth={isAuthenticated} />
+              </Switch>
+              <LoggedInRoute exact path="/createSurvey" component={CreateSurvey} isAuth={isAuthenticated} />
+            </Col>
+          </Row>
         </Spin>
       </Router>
     );
