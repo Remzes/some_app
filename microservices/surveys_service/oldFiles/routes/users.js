@@ -1,6 +1,6 @@
 const passport = require('passport');
 const router = require('express').Router()
-const Validator = require('../helpers/userValidation');
+const Validator = require('../../helpers/userValidation');
 
 router.post('/login', (req, res, next) => {
   const validationResult = Validator.validateSigninForm(req.body)
@@ -38,6 +38,7 @@ router.post('/login', (req, res, next) => {
 });
 
 router.post('/register', (req, res, next) => {
+  console.log(req.body)
   const validationResult = Validator.validateSignupForm(req.body)
   if (!validationResult.success) {
     return res.json({

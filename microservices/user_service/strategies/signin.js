@@ -1,14 +1,16 @@
-const User = require('../../models/User');
+const User = require('../models/User');
 const passport = require('passport')
 const LocalStrategy = require('passport-local').Strategy;
 const jwt = require('jsonwebtoken');
 
 passport.serializeUser((user, done) => {
+  console.log('serialize user')
     done(null, user._id);
 });
 
 //Usage - from session
 passport.deserializeUser((id, done) => {
+  console.log('deserialize user')
     User.findById(id)
         .then(user => {
             done(null, user)
@@ -21,8 +23,13 @@ const SigninStrategy = new LocalStrategy({
   session: false,
   passReqToCallback: true
 }, (req, username, password, done) => {
-  const userData = {username: username.trim(), password: password.trim()}
+  if (!username || !password) {
+      const error = new Error("Incorrect email or password");
+      error.name = "IncorrectCredentialsError";
 
+      return done(error);
+  }
+  const userData = {username: username.trim(), password: password.trim()}
   return User.findOne({ username: userData.username }, (err, user) => {
     if (err) return done(err);
     if (!user) {

@@ -4,7 +4,7 @@ import { getSurveys } from "../../action";
 
 class Profile extends React.Component {
   componentDidMount() {
-    this.props.getSurveys()
+    //this.props.getSurveys()
   }
 
   render() {

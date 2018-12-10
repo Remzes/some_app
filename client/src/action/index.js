@@ -68,27 +68,27 @@ export const getMe = () => dispatch => {
 
 export const getSurveys = () => async dispatch => {
   dispatch({ type: SURVEYS_FETCHING })
-  const res = await axios.get('/api/surveys/list')
+  const res = await axios.get('/api/surveys/list/my')
   res.data.success
     ? dispatch({ type: SURVEYS_FETCHED, payload: { message: res.data.message, surveys: res.data.surveys } })
     : dispatch({ type: SURVEYS_ERROR, payload: { message: res.data.message } })
 }
 
 export const submitSurvey = values => async dispatch => {
-  console.log(values)
-  const res = await axios.post('/api/surveys/newSurvey', {
+  const res = await axios.post('/api/surveys/add', {
     title: values.surveyTitle,
     questions: values.questions,
-    numberOfQuestions: values.surveyQuestionsNumber
+    numberOfQuestions: values.questions.length
   })
   res.data.success
     ? message.success(res.data.message)
     : message.error(res.data.error)
 }
 
-export const logoutUser = history => dispatch => {
+export const logoutUser = history => async dispatch => {
+  const res = await axios.post('/api/users/logout')
   deleteTokenFromLocalStorage();
   setAuthToken(false);
   dispatch(setCurrentUser({}));
-  history.push('/login');
+  if (history) history.push('/login');
 }
