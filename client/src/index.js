@@ -21,8 +21,7 @@ if (module.hot) {
     ReactDOM.render(
       <Provider store={store} >
         <NextApp />
-      </Provider>
-      ,
+      </Provider>,
       rootEl
     )
   })

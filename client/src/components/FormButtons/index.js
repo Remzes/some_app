@@ -1,12 +1,13 @@
 import React from 'react'
+import { Button } from 'antd'
 
 export default ({pristine, submitting}) => {
-  return <div className="buttons">
-    <button type="submit" disabled={pristine || submitting}>
+  return <div className="buttons" style={{ marginTop: '15px' }}>
+    <Button htmlType="submit" disabled={submitting}>
       Submit
-    </button>
-    <button type="button" disabled={pristine || submitting}>
+    </Button>
+    <Button type="primary" htmlType="button" disabled={pristine || submitting}>
       Clear Values
-    </button>
+    </Button>
   </div>
 }

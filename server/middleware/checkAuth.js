@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const User = require('../models/User')
+const Nurse = require('../models/Nurse')
 
 /**
  *  The Auth Checker middleware function.

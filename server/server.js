@@ -4,10 +4,10 @@ const cookieParser = require('cookie-parser')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const checkAuth = require('./middleware/checkAuth')
-const mongoURL = "mongodb://localhost:27017/testapp"
+const config = require('./config')
 const app = express()
 
-mongoose.connect(mongoURL, {
+mongoose.connect(config.mongoURLLocal, {
     useCreateIndex: true,
     useNewUrlParser: true
 });
@@ -25,12 +25,11 @@ app.use(session({
 // Cookie parser
 app.use(cookieParser())
 
-const usersRoutes = require('./routes/user.routes')
-const surveysRoutes = require('./routes/survey.routes')
-app.use('/api/users', usersRoutes)
-app.use('/api/surveys', surveysRoutes)
-app.use(checkAuth)
-
+const authRoutes = require('./routes/auth.routes')
+const patientRoutes = require('./routes/patient.routes')
+app.use('/api/users', authRoutes)
+app.use('/api/patients', patientRoutes)
+//app.use(checkAuth)
 
 app.listen(3001, () => {
     console.log('Listening to port 3001...')

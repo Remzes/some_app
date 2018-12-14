@@ -13,31 +13,45 @@ services:
       - web_server
     depends_on:
       - "web_server"
-      - "web_server_two"
     networks:
       - webapp
   web_server:
     image: web_server
-    build: microservices/user_service
+    build: ./server
     command: npm start
     ports:
-      - "3010:3010"
+      - "3001:3001"
     volumes:
-      - ./user_service:/user_service
-      - /user_service/node_modules
+      - ./server:/server
+      - /server/node_modules
+    depends_on:
+      - "mongo"
+      - "users_microservice"
+      - "patient_microservice"
+    networks:
+      - webapp
+  users_microservice:
+    image: users_microservice
+    build: ./microservices/users_microservice
+    command: npm start
+    ports:
+      - "3002:3002"
+    volumes:
+      - ./microservices/users_microservice:/users_microservice
+      - /users_microservice/node_modules
     depends_on:
       - "mongo"
     networks:
       - webapp
-  web_server_two:
-    image: web_server_two
-    build: microservices/surveys_service
+  patient_microservice:
+    image: patient_microservice
+    build: ./microservices/patient_microservice
     command: npm start
     ports:
-      - "3011:3011"
+      - "3003:3003"
     volumes:
-      - ./surveys_service:/server_two
-      - /surveys_service/node_modules
+      - ./microservices/patient_microservice:/patient_microservice
+      - /patient_microservice/node_modules
     depends_on:
       - "mongo"
     networks:
@@ -47,18 +61,6 @@ services:
     command: mongod --noauth --smallfiles
     ports:
       - "27017:27017"
-    networks:
-      - webapp
-  nginx:
-    image: nginx:latest
-    ports:
-      - "8080:8080"
-    volumes:
-      - ./default.conf:/etc/nginx/conf.d/default.conf
-    depends_on:
-      - web_server
-      - web_server_two
-      - web_client
     networks:
       - webapp
 networks:

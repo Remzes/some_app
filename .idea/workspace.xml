@@ -2,29 +2,76 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d35dd55-707a-4296-ab01-71ec04f09fcf" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/microservices/surveys_service/models/Answer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservices/surveys_service/models/Question.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservices/surveys_service/models/Survey.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservices/user_service/models/Answer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservices/user_service/models/Question.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservices/user_service/models/Survey.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/microservices/user_service/models/User.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/users_microservice/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/users_microservice/strategies/patient/signin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservices/users_microservice/strategies/patient/signup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/Nurse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/Patient.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/action/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/action/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/FormButtons/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/FormButtons/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Login/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Profile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Profile/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Register/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Register/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Surveys/CreateSurvey/Questions/Questions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Surveys/CreateSurvey/Questions/questions.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Surveys/CreateSurvey/Steps/StepOne.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Surveys/CreateSurvey/Steps/StepThree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Surveys/CreateSurvey/Steps/StepTwo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Surveys/CreateSurvey/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Surveys/SurveyPreview/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Surveys/Surveys/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/constants/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/constants/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/decorators/privateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/decorators/LoggedInRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/reducers/surveys.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/patients.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/default.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user_service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/helpers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/helpers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/helpers/userValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/helpers/userValidation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/middleware/checkAuth.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user_service/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user_service/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/surveys.js" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user_service/oldFiles/routes/surveys.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user_service/oldFiles/routes/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user_service/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/services/strategies/signin.js" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user_service/strategies/signin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/services/strategies/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/user_service/strategies/signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/helpers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/users_microservice/helpers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/helpers/userValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/users_microservice/helpers/userValidation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/surveys_service/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/surveys_service/middleware/checkAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/users_microservice/middleware/checkAuth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/surveys_service/models/Answer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/surveys_service/models/Question.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/surveys_service/models/Survey.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/surveys_service/models/User.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/surveys_service/oldFiles/routes/surveys.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/surveys_service/oldFiles/routes/users.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/surveys_service/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/surveys_service/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/surveys_service/plugin/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/surveys_service/routes/routes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/surveys_service/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/user_service/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/user_service/middleware/checkAuth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/user_service/models/Answer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/user_service/models/Question.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/user_service/models/Survey.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/user_service/models/User.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/user_service/oldFiles/routes/surveys.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/user_service/oldFiles/routes/users.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/user_service/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/users_microservice/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/user_service/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/users_microservice/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/user_service/plugin/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/users_microservice/plugin/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/user_service/routes/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/users_microservice/routes/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/user_service/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/users_microservice/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/user_service/strategies/signin.js" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/users_microservice/strategies/nurse/signin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/user_service/strategies/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/users_microservice/strategies/nurse/signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middleware/checkAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/middleware/checkAuth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/Answer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/Question.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/Survey.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/User.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/survey.routes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/user.routes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/services/surveys.service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/services/users.service.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -44,53 +91,54 @@
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="Dockerfile" value="8" />
-          <entry key="conf" value="3" />
-          <entry key="css" value="1" />
+          <entry key="Dockerfile" value="24" />
+          <entry key="conf" value="4" />
+          <entry key="css" value="5" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="1" />
-          <entry key="js" value="192" />
-          <entry key="json" value="32" />
-          <entry key="yml" value="6" />
+          <entry key="js" value="461" />
+          <entry key="json" value="44" />
+          <entry key="yml" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="1" />
-          <entry key="Dockerfile" value="8" />
+          <entry key="CSS" value="5" />
+          <entry key="Dockerfile" value="24" />
           <entry key="HTML" value="1" />
-          <entry key="JSON" value="32" />
-          <entry key="JavaScript" value="192" />
-          <entry key="PLAIN_TEXT" value="4" />
-          <entry key="YAML" value="6" />
+          <entry key="JSON" value="44" />
+          <entry key="JavaScript" value="461" />
+          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="YAML" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Dockerfile" value="304" />
-          <entry key="conf" value="81" />
-          <entry key="css" value="394" />
+          <entry key="Dockerfile" value="350" />
+          <entry key="conf" value="82" />
+          <entry key="css" value="540" />
           <entry key="html" value="2" />
-          <entry key="js" value="22574" />
-          <entry key="json" value="427" />
-          <entry key="yml" value="734" />
+          <entry key="js" value="33926" />
+          <entry key="json" value="493" />
+          <entry key="yml" value="1139" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="394" />
-          <entry key="Dockerfile" value="304" />
+          <entry key="CSS" value="540" />
+          <entry key="Dockerfile" value="350" />
           <entry key="HTML" value="2" />
-          <entry key="JSON" value="427" />
-          <entry key="JavaScript" value="22574" />
-          <entry key="PLAIN_TEXT" value="81" />
-          <entry key="YAML" value="734" />
+          <entry key="JSON" value="493" />
+          <entry key="JavaScript" value="33926" />
+          <entry key="PLAIN_TEXT" value="82" />
+          <entry key="YAML" value="1139" />
         </counts>
       </usages-collector>
     </session>
@@ -104,58 +152,64 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/routes/user.routes.js">
+        <entry file="file://$PROJECT_DIR$/microservices/users_microservice/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+            <state relative-caret-position="268">
+              <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/routes/survey.routes.js">
+        <entry file="file://$PROJECT_DIR$/microservices/patient_microservice/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="61" lean-forward="true" selection-start-line="1" selection-start-column="61" selection-end-line="1" selection-end-column="61" />
+            <state relative-caret-position="65">
+              <caret line="63" column="23" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/services/surveys.service.js">
+        <entry file="file://$PROJECT_DIR$/server/services/patient.service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/action/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1206">
-              <caret line="69" column="38" lean-forward="true" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/services/base.service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="92">
+              <caret line="4" column="62" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/microservices/surveys_service/server.js">
+        <entry file="file://$PROJECT_DIR$/server/services/nurse.service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-506">
-              <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
+            <state relative-caret-position="57">
+              <caret line="3" column="63" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/config/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56">
+              <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -167,9 +221,15 @@
       <find>local-signup</find>
       <find>c</find>
       <find>console.log</find>
+      <find>userValidation</find>
+      <find>usersService</find>
     </findStrings>
+    <replaceStrings>
+      <replace>patientService</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>D:\Документы\Desktop\ReactRemember\react_redux_express</dir>
+      <dir>$PROJECT_DIR$/microservices/users_microservice</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -178,57 +238,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/server/models/Answer.js" />
-        <option value="$PROJECT_DIR$/client/src/components/Surveys/CreateSurvey/Steps/StepTwo.js" />
-        <option value="$PROJECT_DIR$/client/src/components/Surveys/CreateSurvey/Questions/questions.css" />
-        <option value="$PROJECT_DIR$/client/src/components/Surveys/CreateSurvey/Questions/Questions.js" />
-        <option value="$PROJECT_DIR$/server/models/Survey.js" />
-        <option value="$PROJECT_DIR$/server/models/Question.js" />
+        <option value="$PROJECT_DIR$/microservices/users_microservice/models/User.js" />
+        <option value="$PROJECT_DIR$/microservices/users_microservice/strategies/nurse/signin.js" />
+        <option value="$PROJECT_DIR$/microservices/users_microservice/strategies/patient/signup.js" />
+        <option value="$PROJECT_DIR$/microservices/users_microservice/strategies/patient/signin.js" />
+        <option value="$PROJECT_DIR$/client/src/decorators/PatientRoute.js" />
+        <option value="$PROJECT_DIR$/client/src/decorators/NurseRoute.js" />
+        <option value="$PROJECT_DIR$/client/src/decorators/privateRoute.js" />
+        <option value="$PROJECT_DIR$/client/src/components/FormButtons/index.js" />
+        <option value="$PROJECT_DIR$/server/services/users.service.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Login/index.js" />
+        <option value="$PROJECT_DIR$/microservices/users_microservice/routes/routes.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Home/PatientHome.js" />
+        <option value="$PROJECT_DIR$/server/routes/auth.routes.js" />
+        <option value="$PROJECT_DIR$/microservices/users_microservice/models/Nurse.js" />
+        <option value="$PROJECT_DIR$/microservices/users_microservice/plugin/plugin.js" />
+        <option value="$PROJECT_DIR$/microservices/users_microservice/strategies/nurse/signup.js" />
+        <option value="$PROJECT_DIR$/client/src/decorators/LoggedOutRoute.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Header/index.js" />
+        <option value="$PROJECT_DIR$/microservices/nurse_microservice/server.js" />
+        <option value="$PROJECT_DIR$/microservices/nurse_microservice/routes/index.js" />
+        <option value="$PROJECT_DIR$/microservices/nurse_microservice/plugin/index.js" />
+        <option value="$PROJECT_DIR$/microservices/patient_microservice/Dockerfile" />
+        <option value="$PROJECT_DIR$/microservices/patient_microservice/package.json" />
+        <option value="$PROJECT_DIR$/microservices/patient_microservice/routes/index.js" />
+        <option value="$PROJECT_DIR$/microservices/surveys_microservice/server.js" />
         <option value="$PROJECT_DIR$/client/src/constants/types.js" />
         <option value="$PROJECT_DIR$/client/src/reducers/index.js" />
-        <option value="$PROJECT_DIR$/server/routes/surveys.js" />
-        <option value="$PROJECT_DIR$/client/src/reducers/surveys.js" />
-        <option value="$PROJECT_DIR$/client/src/components/Surveys/SurveyPreview/index.js" />
-        <option value="$PROJECT_DIR$/client/src/App.js" />
-        <option value="$PROJECT_DIR$/client/src/components/Header/index.js" />
-        <option value="$PROJECT_DIR$/server/models/User.js" />
-        <option value="$PROJECT_DIR$/another_server/Dockerfile" />
-        <option value="$PROJECT_DIR$/default.conf" />
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/server/services/strategies/signin.js" />
         <option value="$PROJECT_DIR$/client/src/components/Profile/index.js" />
-        <option value="$PROJECT_DIR$/another_server/package.json" />
-        <option value="$PROJECT_DIR$/server/helpers/userValidation.js" />
-        <option value="$PROJECT_DIR$/server/routes/users.js" />
-        <option value="$PROJECT_DIR$/server/seneca/plugin.js" />
-        <option value="$PROJECT_DIR$/server/seneca/routes.js" />
-        <option value="$PROJECT_DIR$/another_server/middleware/checkAuth.js" />
-        <option value="$PROJECT_DIR$/another_server/seneca/plugin.js" />
-        <option value="$PROJECT_DIR$/another_server/seneca/routes.js" />
-        <option value="$PROJECT_DIR$/another_server/server.js" />
-        <option value="$PROJECT_DIR$/microservices/surveys_service/package.json" />
-        <option value="$PROJECT_DIR$/microservices/user_service/package.json" />
-        <option value="$PROJECT_DIR$/microservices/surveys_service/middleware/checkAuth.js" />
-        <option value="$PROJECT_DIR$/microservices/surveys_service/routes/routes.js" />
-        <option value="$PROJECT_DIR$/microservices/user_service/middleware/checkAuth.js" />
-        <option value="$PROJECT_DIR$/microservices/user_service/models/User.js" />
-        <option value="$PROJECT_DIR$/client/package.json" />
-        <option value="$PROJECT_DIR$/server/package.json" />
-        <option value="$PROJECT_DIR$/server/routes/user.routes.js" />
-        <option value="$PROJECT_DIR$/server/services/users.service.js" />
-        <option value="$PROJECT_DIR$/microservices/user_service/plugin/plugin.js" />
-        <option value="$PROJECT_DIR$/microservices/helpers/userValidation.js" />
-        <option value="$PROJECT_DIR$/microservices/helpers/index.js" />
-        <option value="$PROJECT_DIR$/client/src/components/Surveys/Surveys/index.js" />
-        <option value="$PROJECT_DIR$/microservices/user_service/server.js" />
-        <option value="$PROJECT_DIR$/server/server.js" />
+        <option value="$PROJECT_DIR$/client/src/reducers/patients.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Patients/PatientList/index.js" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/client/src/components/Patients/AddPatient/index.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Home/NurseHome.js" />
         <option value="$PROJECT_DIR$/server/middleware/checkAuth.js" />
-        <option value="$PROJECT_DIR$/microservices/surveys_service/server.js" />
-        <option value="$PROJECT_DIR$/server/services/surveys.service.js" />
-        <option value="$PROJECT_DIR$/server/routes/survey.routes.js" />
+        <option value="$PROJECT_DIR$/server/middleware/checkAuthPatient.js" />
+        <option value="$PROJECT_DIR$/server/middleware/checkAuthNurse.js" />
+        <option value="$PROJECT_DIR$/microservices/patient_microservice/plugin/index.js" />
+        <option value="$PROJECT_DIR$/server/routes/patient.routes.js" />
+        <option value="$PROJECT_DIR$/microservices/users_microservice/models/Patient.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Home/index.js" />
+        <option value="$PROJECT_DIR$/client/src/App.js" />
         <option value="$PROJECT_DIR$/client/src/action/index.js" />
-        <option value="$PROJECT_DIR$/microservices/surveys_service/plugin/plugin.js" />
-        <option value="$PROJECT_DIR$/server/services/base.service.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Register/index.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Tips/AddTip/index.js" />
+        <option value="$PROJECT_DIR$/server/config/index.js" />
+        <option value="$PROJECT_DIR$/client/package.json" />
+        <option value="$PROJECT_DIR$/server/server.js" />
+        <option value="$PROJECT_DIR$/microservices/users_microservice/server.js" />
+        <option value="$PROJECT_DIR$/microservices/patient_microservice/server.js" />
+        <option value="$PROJECT_DIR$/server/services/patient.service.js" />
+        <option value="$PROJECT_DIR$/server/services/nurse.service.js" />
       </list>
     </option>
   </component>
@@ -240,22 +300,22 @@
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/client/node_modules" />
-    <handled-path value="$PROJECT_DIR$/microservices/surveys_service/node_modules" />
-    <handled-path value="$PROJECT_DIR$/microservices/user_service/node_modules" />
+    <handled-path value="$PROJECT_DIR$/microservices/patient_microservice/node_modules" />
+    <handled-path value="$PROJECT_DIR$/microservices/users_microservice/node_modules" />
     <handled-path value="$PROJECT_DIR$/server/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/client/package.json" />
-      <path value="$PROJECT_DIR$/microservices/surveys_service/package.json" />
-      <path value="$PROJECT_DIR$/microservices/user_service/package.json" />
+      <path value="$PROJECT_DIR$/microservices/patient_microservice/package.json" />
+      <path value="$PROJECT_DIR$/microservices/users_microservice/package.json" />
       <path value="$PROJECT_DIR$/server/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="835" />
+    <option name="height" value="832" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -263,7 +323,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -279,41 +338,32 @@
             <path>
               <item name="some_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="some_app" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="some_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="some_app" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="some_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="some_app" type="462c0819:PsiDirectoryNode" />
               <item name="microservices" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="some_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="some_app" type="462c0819:PsiDirectoryNode" />
               <item name="microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="surveys_service" type="462c0819:PsiDirectoryNode" />
+              <item name="patient_microservice" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="some_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="some_app" type="462c0819:PsiDirectoryNode" />
               <item name="microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="surveys_service" type="462c0819:PsiDirectoryNode" />
-              <item name="oldFiles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="some_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="some_app" type="462c0819:PsiDirectoryNode" />
-              <item name="microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="surveys_service" type="462c0819:PsiDirectoryNode" />
-              <item name="oldFiles" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="some_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="some_app" type="462c0819:PsiDirectoryNode" />
-              <item name="microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="user_service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="some_app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="some_app" type="462c0819:PsiDirectoryNode" />
-              <item name="microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="user_service" type="462c0819:PsiDirectoryNode" />
-              <item name="plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="users_microservice" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="some_app" type="b2602c69:ProjectViewProjectNode" />
@@ -336,6 +386,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -346,19 +397,19 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/microservices/nurse_microservice/models" />
+      <recent name="$PROJECT_DIR$/microservices/nurse_microservice/plugin" />
+      <recent name="$PROJECT_DIR$/microservices/nurse_microservice" />
+      <recent name="$PROJECT_DIR$/server/models" />
+      <recent name="$PROJECT_DIR$/microservices/patient_microservice" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/microservices/users_microservice" />
       <recent name="$PROJECT_DIR$/microservices/user_service/strategies" />
       <recent name="$PROJECT_DIR$/microservices/user_service/routes" />
       <recent name="$PROJECT_DIR$/microservices/user_service/plugin" />
       <recent name="$PROJECT_DIR$/microservices/surveys_service/plugin" />
-      <recent name="$PROJECT_DIR$/microservices/surveys_service/routes" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/server" />
-      <recent name="$PROJECT_DIR$/microservices/user_service" />
-      <recent name="$PROJECT_DIR$/microservices/surveys_service" />
-      <recent name="$PROJECT_DIR$/another_server/routes" />
-      <recent name="$PROJECT_DIR$/another_server/models" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -405,18 +456,18 @@
       <workItem from="1543865936804" duration="520000" />
       <workItem from="1543900359325" duration="6788000" />
       <workItem from="1544135379938" duration="28642000" />
-      <workItem from="1544248671771" duration="43987000" />
+      <workItem from="1544248671771" duration="49673000" />
+      <workItem from="1544564445738" duration="38018000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171680000" />
+    <option name="totallyTimeSpent" value="215384000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18252291" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18252291" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -430,7 +481,7 @@
       <window_info anchor="bottom" id="Debug Logs" order="8" weight="0.32921347" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Execute Anonymous" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49964765" visible="true" weight="0.31325302" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49964765" visible="true" weight="0.32650602" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5003524" side_tool="true" weight="0.3325301" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -472,339 +523,367 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/src/reducers/currentUser.js">
+    <entry file="file://$PROJECT_DIR$/microservices/surveys_microservice/models/Survey.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+        <state relative-caret-position="322">
+          <caret line="14" selection-start-line="14" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservices/nurse_microservice/plugin/Nurse.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Header/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservices/patient_microservice/models/Patient.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservices/surveys_microservice/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="28" selection-start-line="28" selection-end-line="30" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservices/patient_microservice/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservices/surveys_microservice/plugin/plugin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/constants/types.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/reducers/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
-          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Register/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservices/user_service/strategies/signup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservices/surveys_service/models/Answer.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservices/user_service/models/Answer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservices/surveys_service/helpers/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservices/surveys_service/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/Profile/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        <state relative-caret-position="414">
+          <caret line="18" column="68" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservices/user_service/strategies/signin.js">
+    <entry file="file://$PROJECT_DIR$/client/src/components/Patients/PatientList/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="50" column="15" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
+        <state relative-caret-position="143">
+          <caret line="38" column="51" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/helpers/setAuthToken.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-416">
-          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservices/user_service/oldFiles/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1242">
-          <caret line="79" selection-start-line="79" selection-end-line="83" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservices/surveys_service/oldFiles/routes/users.js">
+    <entry file="file://$PROJECT_DIR$/microservices/surveys_microservice/routes/routes.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservices/surveys_service/models/Survey.js">
+    <entry file="file://$PROJECT_DIR$/client/src/reducers/patients.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-106" />
+        <state relative-caret-position="437">
+          <caret line="19" column="152" selection-start-line="19" selection-start-column="152" selection-end-line="19" selection-end-column="152" />
+          <folding>
+            <element signature="e#0#89#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservices/user_service/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/client/src/components/Home/NurseHome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservices/users_microservice/middleware/checkAuth.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/survey.routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="20" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/middleware/checkAuth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="38" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/middleware/checkAuthNurse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-82">
+          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/middleware/checkAuthPatient.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservices/surveys_microservice/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservices/patient_microservice/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Patients/AddPatient/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="18" column="97" selection-start-line="18" selection-start-column="97" selection-end-line="18" selection-end-column="97" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservices/patient_microservice/plugin/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="21" column="90" selection-start-line="21" selection-start-column="90" selection-end-line="21" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservices/users_microservice/strategies/patient/signin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="38" column="14" lean-forward="true" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Login/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservices/users_microservice/routes/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Home/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservices/users_microservice/models/Patient.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservices/patient_microservice/config/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservices/patient_microservice/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/client/src/action/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservices/users_microservice/Dockerfile">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/default.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservices/middleware/checkAuth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="36" selection-start-column="36" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservices/surveys_service/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservices/surveys_service/middleware/checkAuth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservices/user_service/node_modules/mongoose/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservices/surveys_service/models/User.js">
+    <entry file="file://$PROJECT_DIR$/server/Dockerfile">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservices/user_service/models/User.js">
+    <entry file="file://$PROJECT_DIR$/microservices/users_microservice/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Register/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-576">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="230">
+          <caret line="17" column="112" lean-forward="true" selection-start-line="17" selection-start-column="112" selection-end-line="17" selection-end-column="112" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservices/user_service/middleware/checkAuth.js">
+    <entry file="file://$PROJECT_DIR$/client/src/components/Tips/AddTip/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+        <state relative-caret-position="283">
+          <caret line="18" column="135" selection-start-line="18" selection-start-column="135" selection-end-line="18" selection-end-column="135" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="787">
+          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservices/users_microservice/models/Nurse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-176">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/auth.routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/nurse.routes.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/patient.routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservices/users_microservice/plugin/plugin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="746">
+          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservices/users_microservice/strategies/nurse/signin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        <state relative-caret-position="138">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservices/user_service/package.json">
+    <entry file="file://$PROJECT_DIR$/client/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/node_modules/axois/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservices/user_service/routes/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/node_modules/axios/lib/core/createError.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservices/helpers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservices/helpers/userValidation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="12" column="48" lean-forward="true" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/services/users.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="92" selection-start-line="10" selection-start-column="92" selection-end-line="10" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/reducers/surveys.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="21" column="134" selection-start-line="21" selection-start-column="134" selection-end-line="21" selection-end-column="134" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservices/surveys_service/routes/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Surveys/Surveys/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="1127">
+          <caret line="49" column="116" selection-start-line="49" selection-start-column="116" selection-end-line="49" selection-end-column="116" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/User.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/server/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="51" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
+        <state relative-caret-position="170">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservices/user_service/server.js">
+    <entry file="file://$PROJECT_DIR$/microservices/users_microservice/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        <state relative-caret-position="268">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservices/user_service/plugin/plugin.js">
+    <entry file="file://$PROJECT_DIR$/microservices/patient_microservice/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1065">
-          <caret line="48" column="51" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
+        <state relative-caret-position="65">
+          <caret line="63" column="23" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/middleware/checkAuth.js">
+    <entry file="file://$PROJECT_DIR$/server/services/patient.service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        <state relative-caret-position="92">
+          <caret line="4" column="62" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/routes/user.routes.js">
+    <entry file="file://$PROJECT_DIR$/server/services/nurse.service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/services/surveys.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/routes/survey.routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="61" lean-forward="true" selection-start-line="1" selection-start-column="61" selection-end-line="1" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/action/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1206">
-          <caret line="69" column="38" lean-forward="true" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservices/surveys_service/plugin/plugin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/services/base.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservices/surveys_service/oldFiles/routes/surveys.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="24" column="70" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/microservices/surveys_service/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-506">
-          <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
+        <state relative-caret-position="57">
+          <caret line="3" column="63" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
         </state>
       </provider>
     </entry>

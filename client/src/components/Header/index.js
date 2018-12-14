@@ -11,7 +11,7 @@ class Header extends React.Component {
   render() {
     const isAuthenticated = this.props.user && this.props.user.isAuthenticated
     return (
-      <Menu mode="horizontal">
+      <Menu mode="horizontal" theme="dark" style={{ lineHeight: '64px', textAlign: 'right' }}>
         {!isAuthenticated &&
           <MenuItem>
             <Link to="/login">Login</Link>
@@ -24,23 +24,18 @@ class Header extends React.Component {
         }
         {isAuthenticated &&
           <MenuItem>
-            <a onClick={() => this.props.logoutUser(this.props.history)}>Logout</a>
+            <a onClick={() => this.props.logoutUser(this.props.history, this.props.user.user.role)}>Logout</a>
           </MenuItem>
         }
         {isAuthenticated &&
         <MenuItem>
-          <Link to="/profile">Profile</Link>
+            <Link to="/profile">Profile</Link>
         </MenuItem>
         }
-        {isAuthenticated &&
-        <MenuItem>
-            <Link to="/createSurvey">Create Survey</Link>
-        </MenuItem>
-        }
-        {isAuthenticated &&
-        <MenuItem>
-            <Link to="/surveys">Survey List</Link>
-        </MenuItem>
+        {
+         <MenuItem>
+             <Link to="/">Home</Link>
+         </MenuItem>
         }
       </Menu>
     )

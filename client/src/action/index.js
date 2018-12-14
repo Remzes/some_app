@@ -1,6 +1,6 @@
 import axios from 'axios'
 import jwt_decode from 'jwt-decode';
-import { message } from 'antd'
+import { message, notification } from 'antd'
 import { setTokenToLocalStorage, deleteTokenFromLocalStorage, getTokenFromLocalStorage } from '../helpers/auth'
 
 import {
@@ -8,19 +8,20 @@ import {
   USER_LOGIN_FETCHING, USER_LOGIN_ERROR, USER_LOGIN_FETCHED,
   SET_CURRENT_USER_FETCHING, SET_CURRENT_USER_FETCHED,
   SET_CURRENT_USER_NOTAUTH,
-  SURVEYS_ERROR, SURVEYS_FETCHED, SURVEYS_FETCHING
+  PATIENTS_ERROR, PATIENTS_FETCHED, PATIENTS_FETCHING
 } from '../constants/types'
 import setAuthToken from '../helpers/setAuthToken'
 
-export const registerUser = (values) => async dispatch => {
+export const registerUser = (values, history) => async dispatch => {
   dispatch({ type: USER_REGISTER_FETCHING })
-  const req = await axios.post('/api/users/register', {
+  const req = await axios.post('/api/users/nurse/register', {
     username: values.username || '',
     password: values.password || '',
     email: values.email || '',
     name: values.name || ''
   })
   if (req.data.success) {
+    message.success("You successfully registered as a nurse!", 2, () => history.push('/login'))
     dispatch({ type: USER_REGISTER_FETCHED, payload: req.data })
   } else {
     dispatch({ type: USER_REGISTER_ERROR, payload: req.data })
@@ -29,18 +30,24 @@ export const registerUser = (values) => async dispatch => {
 
 export const loginUser = (values, history) => async dispatch => {
   dispatch({ type: USER_LOGIN_FETCHING })
-  const req = await axios.post(`/api/users/login`, {
+  const req = await axios.post(`/api/users/${values.type}/login`, {
     username: values.username || '',
     password: values.password || ''
   })
   if (req.data.success) {
-    dispatch({ type: USER_LOGIN_FETCHED, payload: req.data })
+    dispatch({ type: USER_LOGIN_FETCHED, payload: {data: req.data, type: values.type }})
     const { token } = req.data
     setTokenToLocalStorage(token)
     setAuthToken(token)
     const decoded = jwt_decode(token)
     dispatch(setCurrentUser(decoded))
   } else {
+    if (req.data.errors) {
+      const errs = req.data.errors
+      if (errs.username) notification.error({ message: errs.username, duration: 3 })
+      if (errs.password) notification.error({ message: errs.password, duration: 3 })
+    }
+    if (req.data.message) message.error(req.data.message)
     dispatch({ type: USER_LOGIN_ERROR, payload: req.data })
   }
 };
@@ -66,27 +73,34 @@ export const getMe = () => dispatch => {
   }
 }
 
-export const getSurveys = () => async dispatch => {
-  dispatch({ type: SURVEYS_FETCHING })
-  const res = await axios.get('/api/surveys/list/my')
+export const getPatients = () => async dispatch => {
+  dispatch({ type: PATIENTS_FETCHING })
+  const res = await axios.get('/api/patients/list')
   res.data.success
-    ? dispatch({ type: SURVEYS_FETCHED, payload: { message: res.data.message, surveys: res.data.surveys } })
-    : dispatch({ type: SURVEYS_ERROR, payload: { message: res.data.message } })
+    ? dispatch({ type: PATIENTS_FETCHED, payload: { message: res.data.message, patients: res.data.patients } })
+    : dispatch({ type: PATIENTS_ERROR, payload: { message: res.data.message } })
 }
 
-export const submitSurvey = values => async dispatch => {
-  const res = await axios.post('/api/surveys/add', {
-    title: values.surveyTitle,
-    questions: values.questions,
-    numberOfQuestions: values.questions.length
+export const addPatient = (values, history) => async dispatch => {
+  const res = await axios.post('/api/patients/add', {
+      username: values.username || '',
+      password: values.password || '',
+      email: values.email || '',
+      name: values.name || ''
   })
-  res.data.success
-    ? message.success(res.data.message)
-    : message.error(res.data.error)
+  if (res.data.success) {
+      message.success(res.data.message, 2, () => history.push('/patients/list'))
+  } else {
+      message.error(res.data.error)
+  }
 }
 
-export const logoutUser = history => async dispatch => {
-  const res = await axios.post('/api/users/logout')
+export const addTip = (values, history) => async dispatch => {
+
+}
+
+export const logoutUser = (history, type) => async dispatch => {
+  const res = await axios.post(`/api/users/${type}/logout`)
   deleteTokenFromLocalStorage();
   setAuthToken(false);
   dispatch(setCurrentUser({}));
